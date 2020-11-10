@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #240046;
+    color: #10002b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Must set min height of body or it will just be slightly bigger tyhan the main div and wont vertically center the div element*/
+    min-height: 100vh;
+    padding: 25px;
+}
+
+h2 {
+    margin: 10px 0px 20px;
+    text-align: center;
+}
+
+.container {
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #c77dff;
+    padding: 15px;
+}
+
+.result-container {
+    background-color: #7b2cbf;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    color: #10002b;
+}
+
+.setting {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* align-self: center; */
+}
+
+#clipboard {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: #c77dff;
+    height: 80%;
+    width: 40px;
+    cursor: grab;
+    font-size: 20px;
+}
+
+#generate {
+    background-color: #7b2cbf;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .result-container {
+        font-size: 14px;
+    }
+}
